@@ -22,6 +22,10 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+#Hirb is a gem for use in the Rails console. Running the command "Hirb.enable" within the console will display database calls as a table instead lines of text.
+gem 'hirb'
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
