@@ -1,28 +1,11 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+As a real-time mentor for CareerFoundry, I help guide students
+through online lessons teaching web development. The back end
+portion of the course covers Ruby on Rails, and shows students
+how to build their own projects using the framework.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+This app is the result of me following along with the lessons,
+and can be used as a reference for improving the current lessons
+and for improving my own understanding of what each lesson
+specifically entails.
