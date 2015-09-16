@@ -1,5 +1,13 @@
-h1 {
+* {box-sizing: border-box}
+
+h1, h2 {
   font-family: 'Ubuntu Mono', sans-serif;
   color: purple;
   text-align: center;
+}
+
+.carousel-image {
+  margin: 0 auto;
+  height: 500px !important;
+  width: auto
 }
