@@ -47,7 +47,7 @@ class ProductsController < ApplicationController
       else
         format.html { render :edit }
         format.json { render json: @product.errors, status: :unprocessable_entity }
-      end
+      endimage_url
     end
   end
 
