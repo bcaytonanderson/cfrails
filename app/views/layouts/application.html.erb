@@ -26,20 +26,24 @@
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
-                      <li>
-                          <%= link_to "Products", products_path %>
-                      </li>
-                      <li>
-                          <%= link_to "Orders", orders_path %>
-                      </li>
+                    <li>
+                      <%= form_tag("/products", method: "get") do %>
+                        <%= text_field_tag(:q, nil, placeholder: 'Search products') %>
+                        <%= button_tag(type: 'submit', class: "btn btn-primary") do %>
+                          <span class="glyphicon glyphicon-search"></span>
+                        <% end %>
+                      <% end %>
+                    </li>
+                    <li>
+                      <%= link_to "Products", products_path %>
+                    </li>
+                    <li>
+                      <%= link_to "Orders", orders_path %>
+                    </li>
                   </ul>
               </div>
               <!-- /.navbar-collapse -->
-              <%= form_tag("/products", method: "get") do %>
-                <%= label_tag(:q, "Search for:") %>
-                <%= text_field_tag(:q) %>
-                <%= submit_tag("Search") %>
-              <% end %>
+
           </div>
           <!-- /.container -->
       </nav>

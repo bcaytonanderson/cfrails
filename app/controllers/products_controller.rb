@@ -5,14 +5,15 @@ class ProductsController < ApplicationController
    # GET /products.json
   def index
     if params[:q] && Rails.env.development?
-      search_term = param[:q]
+      search_term = params[:q]
       @products = Product.where("name LIKE ?", "%#{search_term}")
     elsif params[:q] && Rails.env.production?
-      search_term = param[:q]
+      search_term = params[:q]
       @products = Product.where("name like ?", "%#{search_term}")
     else
       @products = Product.all
     end
+  end
 
    # GET /products/1
    # GET /products/1.json
