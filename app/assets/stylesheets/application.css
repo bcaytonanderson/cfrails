@@ -13,15 +13,21 @@
  *= require_tree .
  *= require_self
  */
-* {box-sizing: border-box}
+* {
+  box-sizing: border-box;
+  border: solid 1px red !important;
+}
 
 body {
   margin-top: 60px;
 }
 
+
+/*NAVBAR STYLES*/
 .navbar-nav {
   float: right;
 }
+
 
 li form {
   padding: 10px 0 10px 0;
