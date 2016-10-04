@@ -14,3 +14,10 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+<% if params[:notice].present? %>
+    alert(<%= params[:notice] %>);
+<% end %>
+<% if params[:alert].present? %>
+    alert(<%= params[:alert] %>);
+<% end %>

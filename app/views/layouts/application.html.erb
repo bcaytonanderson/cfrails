@@ -28,7 +28,7 @@
                   <ul class="nav navbar-nav">
                     <li class="hidden-xs search">
                       <%= form_tag("/products", method: "get") do %>
-                        <%= text_field_tag(:q, nil, placeholder: 'Search products') %>
+                        <%= text_field_tag(:q, nil, placeholder: 'Search products', class: 'input-sm') %>
                         <%= button_tag(type: 'submit', class: "btn btn-primary") do %>
                           <span class="glyphicon glyphicon-search"></span>
                         <% end %>
@@ -43,8 +43,7 @@
                     <li>
                       <%= link_to "Contact", static_pages_contact_path %>
                     </li>
-                  </ul>
-                  <ul class="nav pull-right">
+                  <!-- <ul class="nav pull-right"> -->
                     <li>
                     <% if user_signed_in? %>
                       <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
@@ -52,6 +51,7 @@
                       <%= link_to('Login', new_user_session_path) %>
                     <% end %>
                     </li>
+                  <!-- </ul> -->
                   </ul>
               </div>
               <!-- /.navbar-collapse -->
@@ -59,10 +59,10 @@
           </div>
           <!-- /.container -->
       </nav>
-
+<!-- 
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
-
+ -->
 
 <%= yield %>
 

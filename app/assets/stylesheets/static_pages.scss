@@ -6,8 +6,41 @@ h1, h2 {
   text-align: center;
 }
 
+.carousel {
+	display: flex;
+	flex-direction: column;
+	/*height: 100vh;*/
+}
+
+.carousel-inner {
+	align-self: center;
+}
+
 .carousel-image {
   margin: 0 auto;
   height: 500px !important;
   width: auto
+}
+
+/*Bootstrap Carousel Override*/
+.carousel-indicators {
+	margin-bottom: 5px;
+}
+
+.carousel-indicators li {
+	box-shadow: 0 0 2px #000;
+	align-self: center;
+	background-color: #fff;
+}
+.carousel-indicators li.active {
+	background-color: #337ab7
+}
+
+.carousel-caption {
+	font-size: 2em;
+  text-shadow: 0 2px 6px rgba(0,0,0,1)
+}
+
+a:hover {
+	background-color: #fff;
 }
