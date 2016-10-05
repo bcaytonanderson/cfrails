@@ -1,41 +1,38 @@
-<div class="container col-xs-12 text-center">
+<div class="container col-xs-12 col-sm-6 col-sm-offset-3 text-center">
 <h2>Sign up</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
   <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
+    <%= f.label :email, class: 'sr-only' %><br />
+    <%= f.email_field :email, autofocus: true, class: 'deviseinput input-lg', placeholder: 'Email Address' %>
   </div>
 
   <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
+    <%= f.label :password, class: 'sr-only', placeholder: 'Password' %>
+    <%= f.password_field :password, autocomplete: "off", class: 'deviseinput input-lg', placeholder: 'Password (min. 6 chars)' %>
   </div>
 
   <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+    <%= f.label :password_confirmation, class: 'sr-only' %>
+    <%= f.password_field :password_confirmation, autocomplete: "off", class: 'deviseinput input-lg', placeholder: 'Confirm Password' %>
   </div>
 
 
   <div class="field">
-    <%= f.label :first_name %><br />
-    <%= f.email_field :first_name, autofocus: true %>
+    <%= f.label :first_name, class: 'sr-only' %>
+    <%= f.email_field :first_name, autofocus: true, class: 'deviseinput input-lg', placeholder: 'First Name' %>
   </div>
 
 
   <div class="field">
-    <%= f.label :last_name %><br />
-    <%= f.email_field :last_name, autofocus: true %>
+    <%= f.label :last_name, class: 'sr-only' %>
+    <%= f.email_field :last_name, autofocus: true, class: 'deviseinput input-lg', placeholder: 'Last Name' %>
   </div>
 
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    <%= f.submit "Sign up", class: 'btn-lg btn-primary' %>
   </div>
 <% end %>
 

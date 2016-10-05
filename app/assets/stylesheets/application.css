@@ -37,6 +37,23 @@ li form {
   padding: 10px 0 10px 0;
 }
 
+.field {
+	margin-bottom: 0px!important;
+}
+
 .deviseview {
 	margin: 0 auto;
+}
+
+.deviseinput {
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.actions {
+	margin-top: 10px;
+}
+
+input[type='checkbox'], label[for='user_remember_me'] {
+	display: inline-block;
 }
