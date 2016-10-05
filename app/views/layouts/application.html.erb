@@ -59,12 +59,15 @@
           </div>
           <!-- /.container -->
       </nav>
-<!-- 
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
- -->
+      
+      <% if params[:notice].present? %>
+          alert(<%= params[:notice] %>);
+      <% end %>
+      <% if params[:alert].present? %>
+          alert(<%= params[:alert] %>);
+      <% end %>
 
-<%= yield %>
+      <%= yield %>
 
 </body>
 </html>

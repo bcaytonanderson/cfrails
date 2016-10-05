@@ -24,13 +24,19 @@ body {
   overflow: hidden;
 }
 
+.new_user {
+	margin: 0 auto;
+}
 
 /*NAVBAR STYLES*/
 .navbar-nav {
   float: right;
 }
 
-
 li form {
   padding: 10px 0 10px 0;
+}
+
+.deviseview {
+	margin: 0 auto;
 }
