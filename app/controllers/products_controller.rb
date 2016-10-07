@@ -74,6 +74,8 @@ class ProductsController < ApplicationController
      # Use callbacks to share common setup or constraints between actions.
      def set_product
        @product = Product.find(params[:id])
+       @comments = @product.comments.all.order("created_at DESC")
+       @comments = @product.comments.paginate(page: params[:page], per_page: 3)
      end
 
      # Never trust parameters from the scary internet, only allow the white list through.
