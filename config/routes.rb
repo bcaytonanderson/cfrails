@@ -4,7 +4,9 @@ Rails.application.routes.draw do
   resources :users
   root 'static_pages#landing_page'
 
-  resources :products
+  resources :products do
+  	resources :comments
+  end
 
   resources :orders, only: [:index, :show, :new, :create]
 
