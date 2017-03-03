@@ -1,11 +1,18 @@
-== README
+== Project: CF Rails
 
+==== Introduction
 As a real-time mentor for CareerFoundry, I help guide students
 through online lessons teaching web development. The back end
 portion of the course covers Ruby on Rails, and shows students
 how to build their own projects using the framework.
 
-This app is the result of me following along with the lessons,
-and can be used as a reference for improving the current lessons
-and for improving my own understanding of what each lesson
-specifically entails.
+I have included this project in my portfolio to show, in part, what my time with CareerFoundry looked like. Each commit message describes the actions take to achieve the basic assignment objectives for each lesson; and each subsequent lesson contributes to the same project, and builds upon the concepts taught previously. This is by no means meant to be a showcase of my best work in Rails, just an illustration of the work being done there.
+
+==== Qualification:
+There were a number of revisions to the course material during the time I was with CF, and this was my final go through of the project. Doing this every so often kept my skills sharp, made sure I was prepared for any questions students might have, and it would highlight the source of common mistakes students would make.
+
+I intentionally kept this project a bit basic for a few reasons. First, I know that some students simply need a clear example to compare their own work to. Without adding too many frills or concepts from outside of the lessons, I could share snippets of my correct code easily with them (if things came to that). It was also very handy to have for those times when a typo or other small bug presented a major problem- we could go line-by-line comparing each other's code until we found the answer.
+
+Secondly, the goal of the CF course is to get students to learn on their own and to drive them to do more than simply what the lesson objectives state. One area where this was a particular problem was in the styling of their Rails projects. Thus, mine keeps many of the same basic styles that rails provides when you generate pages. There are some minor tweaks here and there, but I encouraged students to think critically about what they though a successful ecommerce store would look like (and to throw their own creativity into it as well).
+
+==== View the project live on Heroku: https://disappointmentdepot.herokuapp.com/
